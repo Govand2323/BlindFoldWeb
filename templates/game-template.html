@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  GAME / APP PAGE TEMPLATE
+  Copy this file to: games/<slug>/index.html  (or a custom path)
+  Replace every {{TOKEN}} below.
+  Asset paths are root-absolute (/css, /images) so this works
+  at ANY folder depth on the live domain.
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{GAME_TITLE}} — BlindFold Games</title>
+  <meta name="description" content="{{GAME_SHORT_DESC}}" />
+
+  <meta property="og:title" content="{{GAME_TITLE}} — BlindFold Games" />
+  <meta property="og:description" content="{{GAME_SHORT_DESC}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://blindfold-games.com/{{GAME_IMAGE}}" />
+
+  <link rel="icon" href="/images/BlindFoldNinjaLogoCleanCropped1x.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html">
+        <img src="/images/BlindFoldNinjaLogoCleanCropped1x.jpg" alt="BlindFold Games logo" />
+        <span class="wordmark">BLINDFOLD GAMES</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html#games">Games</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="streaks">
+      <span class="streak streak-1"></span>
+      <span class="streak streak-2"></span>
+      <span class="streak streak-3"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="game-detail-head">
+        <img class="game-detail-cover" src="/{{GAME_IMAGE}}" alt="{{GAME_TITLE}}" />
+        <div>
+          <span class="eyebrow">BlindFold Games</span>
+          <h1 class="h-hero">{{GAME_TITLE}}</h1>
+          <div class="store-row">
+            <!-- STORE BUTTONS: keep/remove as needed -->
+            <a class="btn btn-primary" href="{{GAME_LINK}}" target="_blank" rel="noopener">Get it now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 24px;">
+    <div class="container prose">
+      <a class="back-link" href="/index.html#games">← All games &amp; apps</a>
+
+      <!-- GAME DETAILS — replace with your content -->
+      {{GAME_DETAILS}}
+
+      <!-- PRIVACY LINK (only if this app has its own policy) -->
+      {{PRIVACY_LINK_BLOCK}}
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="/index.html">
+        <img src="/images/BlindFoldNinjaLogoCleanCropped1x.jpg" alt="BlindFold Games" />
+        <span class="wordmark">BLINDFOLD GAMES</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="/index.html#games">Games</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+      <a class="footer-mail" href="mailto:mapwizard.gg@gmail.com">mapwizard.gg@gmail.com</a>
+      <p class="footer-copy">© 2026 BlindFold Games. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
