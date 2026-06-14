@@ -1,0 +1,875 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "wzhMW",
+      "x": 200,
+      "y": 0,
+      "name": "Landing Page",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg-base",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "qqGOx",
+          "layoutPosition": "absolute",
+          "x": -100,
+          "y": 340,
+          "name": "Streak1",
+          "opacity": 0.5,
+          "rotation": 8,
+          "fill": "$accent-purple",
+          "width": 900,
+          "height": 5,
+          "effect": {
+            "type": "blur",
+            "radius": 50
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "L8QnPx",
+          "layoutPosition": "absolute",
+          "x": 700,
+          "y": 520,
+          "name": "Streak2",
+          "opacity": 0.45,
+          "rotation": -6.000000000000001,
+          "fill": "$accent-pink",
+          "width": 840,
+          "height": 4,
+          "effect": {
+            "type": "blur",
+            "radius": 55
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "WiKMX",
+          "layoutPosition": "absolute",
+          "x": 200,
+          "y": 180,
+          "name": "Streak3",
+          "opacity": 0.4,
+          "rotation": 5,
+          "fill": "$accent-cyan",
+          "width": 700,
+          "height": 4,
+          "effect": {
+            "type": "blur",
+            "radius": 45
+          }
+        },
+        {
+          "type": "frame",
+          "id": "zHPa6",
+          "name": "Nav",
+          "width": "fill_container",
+          "padding": [
+            120,
+            28
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "A2PwVA",
+              "name": "Brand",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o5zdae",
+                  "name": "LogoMark",
+                  "clip": true,
+                  "width": 42,
+                  "height": 42,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/BlindFoldNinjaLogoCleanCropped1x.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "a3ntV",
+                  "name": "brandText",
+                  "fill": "$text-primary",
+                  "content": "BLINDFOLD GAMES",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EU4QR",
+              "name": "NavLinks",
+              "gap": 36,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wSFw3",
+                  "name": "nl1",
+                  "fill": "$text-primary",
+                  "content": "Home",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "w6BIg",
+                  "name": "nl2",
+                  "fill": "$text-muted",
+                  "content": "Games",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "B1HDmf",
+                  "name": "nl3",
+                  "fill": "$text-muted",
+                  "content": "About",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ANXmJ",
+                  "name": "nl4",
+                  "fill": "$text-muted",
+                  "content": "Contact",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sp7N3",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            120,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "BBm1y",
+              "name": "HeroLogo",
+              "clip": true,
+              "width": 150,
+              "height": 150,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/BlindFoldNinjaLogoCleanCropped1x.jpg",
+                "mode": "fill"
+              },
+              "cornerRadius": 24,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#A855F766",
+                "blur": 60,
+                "spread": 4
+              }
+            },
+            {
+              "type": "frame",
+              "id": "aHnqp",
+              "name": "Badge",
+              "fill": "$bg-elevated",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-subtle"
+              },
+              "gap": 8,
+              "padding": [
+                16,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "xrp8W",
+                  "name": "badgeDot",
+                  "fill": "$accent-cyan",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "OAUeZ",
+                  "name": "badgeText",
+                  "fill": "$text-muted",
+                  "content": "INDIE GAME STUDIO",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "HQV40",
+              "name": "headline",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "PLAY. ENJOY. REPEAT.",
+              "lineHeight": 1,
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 88,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "LZsh7",
+              "name": "tagline",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 620,
+              "content": "We're a small studio crafting games and apps with passion — tools that make life easier and games that are simply fun to play.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "DFWTA",
+              "name": "CTARow",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FyKEw",
+                  "name": "CTAPrimary",
+                  "fill": "$accent-purple",
+                  "cornerRadius": 8,
+                  "padding": [
+                    28,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZSMCv",
+                      "name": "ctaPrimaryText",
+                      "fill": "$text-primary",
+                      "content": "Explore Our Games",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "arZ3p",
+                  "name": "CTASecondary",
+                  "fill": "$bg-elevated",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "padding": [
+                    28,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EJAZq",
+                      "name": "ctaSecondaryText",
+                      "fill": "$text-primary",
+                      "content": "Get in Touch",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UVW4b",
+          "name": "GamesSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            120,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "E5KonN",
+              "name": "GamesHeader",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OGxCR",
+                  "name": "gLabel",
+                  "fill": "$text-primary",
+                  "content": "OUR GAMES & APPS",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 44,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "nWgs9",
+                  "name": "gSub",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Everything we build, in one place. New titles drop here.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Lek00",
+              "name": "CardRow",
+              "width": "fill_container",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x9pNdJ",
+                  "name": "Card1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fVKzN",
+                      "name": "Thumb",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#A855F7",
+                            "position": 0
+                          },
+                          {
+                            "color": "#22D3EE",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "mJBrX",
+                          "name": "c1icon",
+                          "width": 56,
+                          "height": 56,
+                          "iconFontName": "gamepad-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WrUDt",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d7MPS",
+                          "name": "c1badge",
+                          "fill": "$accent-cyan",
+                          "content": "COMING SOON",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "P46INT",
+                          "name": "c1title",
+                          "fill": "$text-primary",
+                          "content": "New Title",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qovk7",
+                          "name": "c1desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Our next game is in the works. Check back soon for the reveal.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FdozB",
+                  "name": "card2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SpLST",
+                      "name": "Thumb",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#EC4899",
+                            "position": 0
+                          },
+                          {
+                            "color": "#A855F7",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "EdKqD",
+                          "name": "c1icon",
+                          "width": 56,
+                          "height": 56,
+                          "iconFontName": "puzzle",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bY4G2",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n0UYwv",
+                          "name": "c1badge",
+                          "fill": "$accent-cyan",
+                          "content": "COMING SOON",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "IjPrF",
+                          "name": "c1title",
+                          "fill": "$text-primary",
+                          "content": "New Title",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oWKGy",
+                          "name": "c1desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Our next game is in the works. Check back soon for the reveal.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A7rEiu",
+                  "name": "card3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lsL7L",
+                      "name": "Thumb",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#22D3EE",
+                            "position": 0
+                          },
+                          {
+                            "color": "#EC4899",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "lgqBv",
+                          "name": "c1icon",
+                          "width": 56,
+                          "height": 56,
+                          "iconFontName": "sparkles",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BXifk",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mc5NY",
+                          "name": "c1badge",
+                          "fill": "$accent-cyan",
+                          "content": "COMING SOON",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "UfplP",
+                          "name": "c1title",
+                          "fill": "$text-primary",
+                          "content": "New Title",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TehpB",
+                          "name": "c1desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Our next game is in the works. Check back soon for the reveal.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rX2CJ",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-elevated",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$border-subtle"
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            120,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "aPGnT",
+              "name": "FooterBrand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S5TfGW",
+                  "name": "fLogo",
+                  "clip": true,
+                  "width": 32,
+                  "height": 32,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/BlindFoldNinjaLogoCleanCropped1x.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 6
+                },
+                {
+                  "type": "text",
+                  "id": "ZgeKw",
+                  "name": "fBrandText",
+                  "fill": "$text-primary",
+                  "content": "BLINDFOLD GAMES",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gMpGc",
+              "name": "FooterLinks",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lvo08",
+                  "name": "fl1",
+                  "fill": "$text-muted",
+                  "content": "Games",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Vnkjs",
+                  "name": "fl2",
+                  "fill": "$text-muted",
+                  "content": "About",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Kiem7",
+                  "name": "fl3",
+                  "fill": "$text-muted",
+                  "content": "Contact",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "udnsS",
+                  "name": "fl4",
+                  "fill": "$text-muted",
+                  "content": "Privacy Policy",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "c9JDET",
+              "name": "fMail",
+              "fill": "$accent-purple",
+              "content": "mapwizard.gg@gmail.com",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "cxu1j",
+              "name": "fCopy",
+              "fill": "$text-muted",
+              "content": "© 2026 BlindFold Games. All rights reserved.",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-cyan": {
+      "type": "color",
+      "value": "#22D3EE"
+    },
+    "accent-pink": {
+      "type": "color",
+      "value": "#EC4899"
+    },
+    "accent-purple": {
+      "type": "color",
+      "value": "#A855F7"
+    },
+    "bg-base": {
+      "type": "color",
+      "value": "#0A0A0F"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#16161F"
+    },
+    "bg-elevated": {
+      "type": "color",
+      "value": "#14141C"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#27272A"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Anton"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 6
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#A1A1AA"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
