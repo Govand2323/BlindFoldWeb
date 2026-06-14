@@ -470,6 +470,17 @@ a.card:hover {
   text-underline-offset: 3px;
 }
 
+/* Buttons inside prose must keep button styling, not body-link styling */
+.prose a.btn {
+  text-decoration: none;
+}
+.prose a.btn-primary {
+  color: #fff;
+}
+.prose a.btn-secondary {
+  color: var(--text-primary);
+}
+
 .prose strong {
   color: var(--text-primary);
 }
